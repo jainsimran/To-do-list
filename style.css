@@ -1,0 +1,18 @@
+body {
+  background-color: papayawhip;
+  text-align: center;
+}
+ul {
+  text-align: left;
+  border: 2px #FF9800 solid;
+  background-color: snow;
+  margin: 50px;
+}
+h1 {
+  font-family: monospace;
+  font-size: 35px;
+}
+input {
+  width: 210px;
+  height: 20px;
+}
