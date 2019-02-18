@@ -1,4 +1,3 @@
-
 let ul = document.getElementById('list');
 let submitBtn = document.getElementById('submit');
 
@@ -13,6 +12,7 @@ function addItem(newItem){
   let text = document.createTextNode(input + ' ');
   let li = document.createElement("li");
   let doneBtn = document.createElement('button');
+  let linebreak = document.createElement("br");
   document.getElementById('todoInput').value= '';
 
 // show alert if input is empty
@@ -25,15 +25,15 @@ function addItem(newItem){
   doneBtn.innerHTML = "DONE";
   doneBtn.setAttribute("onclick", "done(this);");
 
-
   li.appendChild(text);
   li.appendChild(doneBtn);
   document.getElementById("todoList").appendChild(text);
   document.getElementById("todoList").appendChild(doneBtn);
+  document.getElementById("todoList").appendChild(linebreak);
 }
 
 // to check the item
-function done(item) {
+function done() {
   let doneItem = document.getElementById('todoList');
   doneItem.style.textDecoration = "line-through";
 }
